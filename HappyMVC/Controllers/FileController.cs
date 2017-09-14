@@ -33,10 +33,10 @@ namespace HappyMVC.Controllers
 
         public ActionResult Content(string id)
         {
-            var filename =  "~/TextFiles/" + id + ".txt";
+            var filename =  "~\\TextFiles\\" + id + ".txt";
             Info fileinfo = new Info();
             fileinfo.Name = id;
-            string path = "/TextFiles/" + id + ".txt";
+            string path = "\\TextFiles\\" + id + ".txt";
             fileinfo.Path =Server.MapPath(path);
 
             //Read the file as one string.
