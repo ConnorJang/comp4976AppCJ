@@ -1,0 +1,16 @@
+﻿@using HappyMVC.Models
+@model List<Info>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Text Files</h2>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@Html.ActionLink((string)item.Name, "Content", new { Id = item.Name })</li>  
+    }
+</ul>
+
