@@ -13,6 +13,7 @@ namespace HappyMVC.Controllers
         // GET: File
         public ActionResult Index()
         {
+
             string[] filenames = Directory.GetFiles(Server.MapPath("~\\TextFiles"));
             List<string> files = new List<string>();
             List<Info> info = new List<Info>();
